@@ -6,3 +6,4 @@
  LabelEncoder
 ### The data is from kaggle at (https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset)
 I removed the test folder for my project
+### GUI update
