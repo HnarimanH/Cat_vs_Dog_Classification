@@ -22,17 +22,17 @@ class Gui:
         
         self.root.title("Cat_vs_dog")
         
-        self.button = Button(self.root,text="Select Image",bg="Black",command=self.get_image_path)
+        self.button = Button(self.root,text="Select Image",bg="black",command=self.get_image_path)
         self.button.place(relx=0.5,rely=0.2,anchor=CENTER)
         
-        self.label1 = Label(self.root)
+        self.label1 = Label(self.root,bg="#161516")
         self.label1.place(relx=0.5,rely=0.6,anchor=CENTER)
         self.root.mainloop()
     def get_image_path(self):
         self.file_path = filedialog.askopenfilename(initialdir="/", title="Select file",
                                                    filetypes=(("png files", "*.png"), ("jpg files", "*.jpg"), ("jpg files", "*.jpeg")))
         self.prep_image()
-        self.label = Label(self.root,text=self.text,bg="Black")
+        self.label = Label(self.root,text=self.text,bg="#161516",fg="lightgreen")
         self.label.place(relx=0.5,rely=0.3,anchor=CENTER)
          
         self.label1.config(image=self.img_tk)
